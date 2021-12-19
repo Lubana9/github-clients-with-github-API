@@ -1,0 +1,48 @@
+@import "@styles/style.scss";
+
+.card {
+  display: flex;
+  border-radius: $radius;
+  border: 1px solid $color-Border;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.card-primary {
+  background: $color-background;
+}
+.card-body {
+  color: $color-Hint;
+  margin: 0 10px;
+}
+.card-heading {
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+  color: $color-default;
+  white-space: nowrap;
+  width: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-link {
+  margin-bottom: 5px;
+}
+.card-link_txt {
+  text-decoration: none;
+
+  &:hover {
+    color: $color-linkHover;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px 10px $color--shadow;
+  }
+}
+
+.card-content_txt {
+  vertical-align: bottom;
+}

@@ -1,0 +1,31 @@
+@import "@styles/style.scss";
+.input {
+  border-radius: $radius;
+  border: 1px solid $color-Border;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 17px 75px 17px 12px;
+  margin-right: 10px;
+}
+
+.input-group {
+  display: flex;
+}
+.input-group_input {
+  flex-grow: 1;
+}
+
+.input::placeholder {
+  color: $color-Hint;
+}
+
+.input:focus {
+  border-color: $color-accent;
+}
+
+.input:disabled {
+  background: $color-body;
+  border-color: $color-Border;
+  color: $color-Hint;
+}

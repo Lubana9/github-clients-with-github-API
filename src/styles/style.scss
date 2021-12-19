@@ -1,0 +1,24 @@
+$color-accent: #ff5555;
+$color-background: #fff;
+$color-body: #e5e5e5;
+$color-Border: #d9d9d9;
+$color-default: #000;
+$color-Hint: #7e7e7e;
+$color-linkHover: #208fbf;
+$color-starAccent: #ff9432;
+$color--shadow: #f3f3f3;
+$radius: 6px;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: $color-body;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}

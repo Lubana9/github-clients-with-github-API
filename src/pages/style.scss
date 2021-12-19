@@ -1,0 +1,73 @@
+@import "@styles/style.scss";
+
+.input {
+  border-radius: $radius;
+  border: 1px solid $color-Border;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  padding: 17px 75px 17px 12px;
+  margin-right: 10px;
+
+  &::placeholder {
+    color: $color-Hint;
+  }
+
+  &:focus {
+    border-color: $color-accent;
+  }
+
+  &:disabled {
+    background: $color-body;
+    border-color: $color-Border;
+    color: $color-Hint;
+  }
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+.input-group_input {
+  flex-grow: 1;
+}
+
+.btn-search {
+  background: $color-accent;
+  border: 0;
+  outline: 0;
+  border-radius: $radius;
+  padding: 16px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    background: $color-Border;
+    cursor: auto;
+    opacity: 1;
+  }
+}
+
+.grid {
+  display: grid;
+}
+.grid > .grid--1x2 {
+  grid-template-columns: 2fr 1fr;
+}
+.grid--1x2 {
+  margin: 20px 0 30px 0;
+}
+
+.grid--1x3 {
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

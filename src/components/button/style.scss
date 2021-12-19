@@ -1,0 +1,20 @@
+@import "@styles/style.scss";
+
+.btn-search {
+  background: $color-accent;
+  border: 0;
+  outline: 0;
+  border-radius: $radius;
+  padding: 16px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    background: $color-Border;
+    cursor: auto;
+    opacity: 1;
+  }
+}

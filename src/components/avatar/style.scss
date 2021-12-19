@@ -1,0 +1,23 @@
+@import "@styles/style.scss";
+
+.icon-content_img {
+  width: 100%;
+  clip-path: circle(50%);
+}
+
+.icon-container {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 80px;
+  justify-content: center;
+  width: 80px;
+  background-color: $color-background;
+}
+
+.icon_content_txt {
+  font-size: 40px;
+  color: $color-accent;
+  font-weight: 700;
+  text-align: center;
+}
