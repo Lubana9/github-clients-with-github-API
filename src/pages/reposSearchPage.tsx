@@ -35,7 +35,7 @@ const ReposSearchPage: React.FC = () => {
   const repoBranchesStore = useLocalStore(() => new RepoBranchesStore());
   useEffect(() => {
     githubStore.getOrganizationReposList({
-      organizaionName: "ktsstudio",
+      organizaionName: "github",
     });
   }, [githubStore]);
 
@@ -61,7 +61,7 @@ const ReposSearchPage: React.FC = () => {
       });
     } else {
       githubStore.getOrganizationReposList({
-        organizaionName: "ktsstudio",
+        organizaionName: "github",
       });
     }
   }, [githubStore]);
@@ -91,7 +91,7 @@ const ReposSearchPage: React.FC = () => {
             next={() =>
               setTimeout(() => {
                 githubStore.GetAdditionalOrganization({
-                  additionalOrganizaionName: githubStore.value,
+                  additionalOrganizaionName: githubStore.value || "github",
                 });
               }, 1500)
             }

@@ -18,6 +18,7 @@ export interface IGitHubStore {
   getOrganizationReposList(
     params: GetOrganizationReposListParams
   ): Promise<void>;
+  GetAdditionalOrganization(params: GetAdditionalOrganization): Promise<void>;
 }
 
 export interface IBranches {
