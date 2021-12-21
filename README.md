@@ -1,1 +1,1 @@
-[Demo](https://awesome-tereshkova-d787e9.netlify.app/repos).
+[Demo](https://github-clients.netlify.app).
